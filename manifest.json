@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "InPromptu",
+  "version": "1.0.0",
+  "description": "Quickly insert categorized prompts into LLM chat interfaces with a sleek, easy-to-use interface",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://bard.google.com/*",
+    "https://copilot.microsoft.com/*",
+    "https://poe.com/*",
+    "https://character.ai/*",
+    "https://perplexity.ai/*",
+    "https://you.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://claude.ai/*",
+        "https://bard.google.com/*",
+        "https://copilot.microsoft.com/*",
+        "https://poe.com/*",
+        "https://character.ai/*",
+        "https://perplexity.ai/*",
+        "https://you.com/*"
+      ],
+      "js": ["content_script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "InPromptu - Smart prompts at your fingertips"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["prompts.json", "icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 

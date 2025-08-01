@@ -1,0 +1,104 @@
+{
+  "categories": [
+    {
+      "id": "code",
+      "name": "Code",
+      "icon": "💻",
+      "prompts": [
+        {
+          "id": "code-review",
+          "title": "Comprehensive Code Review",
+          "content": "Please perform a thorough code review of the following code. Analyze it for:\n\n• **Code Quality**: Check for readability, maintainability, and best practices\n• **Performance**: Identify potential performance bottlenecks or optimizations\n• **Security**: Look for security vulnerabilities or potential issues\n• **Bugs**: Find any logical errors or edge cases that might cause problems\n• **Design Patterns**: Suggest better architectural patterns if applicable\n\nProvide specific, actionable feedback with examples:\n\n```\n[Paste your code here]\n```"
+        },
+        {
+          "id": "debug-assistant",
+          "title": "Advanced Debugging Assistant",
+          "content": "I'm encountering an issue with my code. Please help me debug it systematically:\n\n**Problem Description**:\n[Describe what's happening vs what should happen]\n\n**Error Messages**:\n[Include any error messages or stack traces]\n\n**Code Context**:\n```\n[Paste the problematic code here]\n```\n\n**Environment**:\n[Programming language, framework, version]\n\nPlease:\n1. Analyze the most likely causes\n2. Suggest step-by-step debugging approaches\n3. Provide potential solutions with explanations\n4. Recommend preventive measures for the future"
+        },
+        {
+          "id": "refactor-optimize",
+          "title": "Refactor & Optimize Code",
+          "content": "Please refactor and optimize the following code to make it:\n\n• **More readable** and maintainable\n• **Better performing** with improved efficiency\n• **Following best practices** for the language/framework\n• **More modular** and reusable\n• **Better tested** (suggest test cases)\n\nOriginal code:\n```\n[Paste your code here]\n```\n\nPlease provide:\n1. The refactored version with explanations\n2. Performance improvements made\n3. Design pattern recommendations\n4. Suggested unit tests"
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "Writing & Summarization",
+      "icon": "✍️",
+      "prompts": [
+        {
+          "id": "professional-writing",
+          "title": "Professional Writing Enhancement",
+          "content": "Please improve the following text to make it more professional, clear, and impactful:\n\n**Original Text**:\n[Paste your text here]\n\n**Context**: [Email/Report/Proposal/Article/etc.]\n**Target Audience**: [Who will read this?]\n**Tone Desired**: [Professional/Friendly/Formal/Persuasive]\n\nPlease:\n• Enhance clarity and readability\n• Improve grammar and sentence structure\n• Strengthen the argument or message\n• Ensure appropriate tone and style\n• Highlight key changes made and why"
+        },
+        {
+          "id": "comprehensive-summary",
+          "title": "Comprehensive Summary & Analysis",
+          "content": "Please create a comprehensive summary and analysis of the following content:\n\n**Source Material**:\n[Paste your text/article/document here]\n\n**Summary Requirements**:\n• **Executive Summary**: 2-3 sentence overview\n• **Key Points**: 5-7 main takeaways with bullet points\n• **Detailed Analysis**: Important insights and implications\n• **Action Items**: Practical next steps or recommendations\n• **Critical Assessment**: Strengths, limitations, or gaps in the content\n\nPlease organize the summary for easy scanning and reference."
+        },
+        {
+          "id": "content-adaptation",
+          "title": "Content Adaptation & Repurposing",
+          "content": "Please adapt the following content for a different format, audience, or purpose:\n\n**Original Content**:\n[Paste your content here]\n\n**Adaptation Request**:\n• **Target Format**: [Blog post/Social media/Email/Presentation/etc.]\n• **Target Audience**: [Who is the new audience?]\n• **Key Message**: [What should they remember?]\n• **Tone**: [Professional/Casual/Engaging/Educational]\n• **Length**: [Word count or time limit]\n\nPlease maintain the core message while optimizing for the new context."
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "name": "Research & Analysis",
+      "icon": "🔍",
+      "prompts": [
+        {
+          "id": "research-plan",
+          "title": "Research Strategy & Planning",
+          "content": "Help me create a comprehensive research plan for the following topic:\n\n**Research Topic**:\n[Your research question or topic]\n\n**Research Objectives**:\n• [What do you want to learn?]\n• [What decisions will this research inform?]\n\n**Context**:\n[Background information, why this research is needed]\n\nPlease provide:\n1. **Research Questions**: Specific, actionable questions to investigate\n2. **Research Methods**: Best approaches for gathering information\n3. **Information Sources**: Where to find reliable data\n4. **Analysis Framework**: How to evaluate and synthesize findings\n5. **Timeline**: Suggested research phases and milestones\n6. **Potential Challenges**: What obstacles to anticipate"
+        },
+        {
+          "id": "data-analysis",
+          "title": "Data Analysis & Insights",
+          "content": "Please analyze the following data and provide actionable insights:\n\n**Data/Information**:\n[Paste your data, findings, or information here]\n\n**Analysis Context**:\n• **Business/Research Question**: [What decision needs to be made?]\n• **Stakeholders**: [Who will use these insights?]\n• **Success Metrics**: [What constitutes success?]\n\nPlease provide:\n• **Key Patterns**: What trends or patterns emerge?\n• **Statistical Insights**: Important numbers and relationships\n• **Actionable Recommendations**: Specific next steps\n• **Risk Assessment**: Potential challenges or limitations\n• **Success Indicators**: How to measure progress"
+        },
+        {
+          "id": "competitive-analysis",
+          "title": "Competitive Analysis Framework",
+          "content": "Help me conduct a competitive analysis for:\n\n**Subject/Company/Product**:\n[What you're analyzing]\n\n**Industry/Market**:\n[Context and scope]\n\n**Key Competitors**:\n[List known competitors if any]\n\n**Analysis Goals**:\n• [What competitive advantages are you looking for?]\n• [What threats do you want to identify?]\n• [What opportunities might exist?]\n\nPlease provide a framework for analyzing:\n1. **Competitor Identification**: How to find and categorize competitors\n2. **Evaluation Criteria**: What factors to compare\n3. **Strengths/Weaknesses**: Analysis methodology\n4. **Market Positioning**: How each competitor positions themselves\n5. **Opportunities**: Gaps in the market to exploit\n6. **Strategic Recommendations**: How to compete effectively"
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "Creative & Innovation",
+      "icon": "🎨",
+      "prompts": [
+        {
+          "id": "brainstorm-ideas",
+          "title": "Creative Brainstorming Session",
+          "content": "Let's have a creative brainstorming session for:\n\n**Challenge/Opportunity**:\n[Describe what you need ideas for]\n\n**Constraints**:\n• Budget: [Any budget limitations]\n• Timeline: [When does this need to be completed?]\n• Resources: [What resources are available?]\n• Requirements: [Any must-have features or criteria?]\n\n**Context**:\n[Background information, current situation]\n\nPlease generate:\n1. **10+ Diverse Ideas**: Range from conservative to wildly creative\n2. **Categorized Solutions**: Group ideas by theme or approach\n3. **Quick Feasibility Assessment**: Rate each idea's viability\n4. **Hybrid Opportunities**: Ways to combine the best ideas\n5. **Next Steps**: How to test or develop the most promising concepts"
+        },
+        {
+          "id": "innovation-framework",
+          "title": "Innovation Strategy Framework",
+          "content": "Help me develop an innovation strategy for:\n\n**Innovation Goal**:\n[What do you want to innovate?]\n\n**Current State**:\n[Describe the existing situation]\n\n**Desired Outcome**:\n[What success looks like]\n\n**Innovation Type**:\n[Product/Service/Process/Business Model]\n\n**Stakeholders**:\n[Who will be affected by this innovation?]\n\nPlease provide:\n• **Opportunity Assessment**: Where innovation can create value\n• **Innovation Approaches**: Different methods to consider\n• **Resource Requirements**: What you'll need to succeed\n• **Risk Management**: Potential obstacles and mitigation strategies\n• **Success Metrics**: How to measure innovation impact\n• **Implementation Roadmap**: Step-by-step development plan"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity & Planning",
+      "icon": "⚡",
+      "prompts": [
+        {
+          "id": "project-planning",
+          "title": "Strategic Project Planning",
+          "content": "Help me create a comprehensive project plan for:\n\n**Project Name**:\n[Your project title]\n\n**Project Goal**:\n[What you want to achieve]\n\n**Deadline**:\n[When it needs to be completed]\n\n**Team Size**:\n[How many people involved?]\n\n**Budget**:\n[Available resources]\n\n**Project Scope**:\n[Describe what's included and what's not]\n\nPlease provide:\n1. **Work Breakdown Structure**: Major phases and tasks\n2. **Timeline**: Critical milestones and dependencies\n3. **Resource Allocation**: Who does what and when\n4. **Risk Assessment**: Potential problems and contingencies\n5. **Success Criteria**: How to measure project success\n6. **Communication Plan**: How to keep stakeholders informed"
+        },
+        {
+          "id": "workflow-optimization",
+          "title": "Workflow Optimization Analysis",
+          "content": "Analyze and optimize my current workflow:\n\n**Current Process**:\n[Describe your current workflow step by step]\n\n**Pain Points**:\n• [What's frustrating or inefficient?]\n• [Where do bottlenecks occur?]\n• [What takes too much time?]\n\n**Goals**:\n• [What would improved efficiency look like?]\n• [What outcomes do you want?]\n\n**Constraints**:\n• [What tools/systems must you keep?]\n• [What can't be changed?]\n\nPlease suggest:\n• **Process Improvements**: Streamlined workflow steps\n• **Automation Opportunities**: Tasks that can be automated\n• **Tool Recommendations**: Software or systems to help\n• **Time Management**: Better scheduling and prioritization\n• **Measurement System**: How to track improvements"
+        }
+      ]
+    }
+  ]
+} 

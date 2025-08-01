@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InPromptu</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <div class="popup-header">
+      <div class="brand">
+        <h1>InPromptu</h1>
+        <span class="tagline">Smart prompts at your fingertips</span>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="popup-content">
+      <!-- Quick Start -->
+      <div class="section">
+        <h3>🚀 Quick Start</h3>
+        <div class="quick-start-card">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <div class="step-title">Open Sidebar</div>
+              <div class="step-description">Press <kbd>Ctrl + Shift + P</kbd> on any LLM site</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <div class="step-title">Browse Prompts</div>
+              <div class="step-description">Search or browse by category</div>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <div class="step-title">Insert & Go</div>
+              <div class="step-description">Click any prompt to insert it instantly</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion Sections -->
+      <div class="accordion">
+        <!-- Supported Sites -->
+        <div class="accordion-item">
+          <button class="accordion-header" id="sites-header">
+            <h3>🌐 Supported Sites</h3>
+            <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div class="accordion-content" id="sites-content">
+            <div class="sites-grid">
+              <div class="site-item">ChatGPT</div>
+              <div class="site-item">Claude AI</div>
+              <div class="site-item">Google Bard</div>
+              <div class="site-item">Microsoft Copilot</div>
+              <div class="site-item">Poe</div>
+              <div class="site-item">Character.AI</div>
+              <div class="site-item">Perplexity</div>
+              <div class="site-item">You.com</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div class="accordion-item">
+          <button class="accordion-header" id="categories-header">
+            <h3>📂 Prompt Categories</h3>
+            <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div class="accordion-content" id="categories-content">
+            <div class="categories-list">
+              <div class="category-item">
+                <span class="category-icon">💻</span>
+                <div class="category-info">
+                  <div class="category-name">Code</div>
+                  <div class="category-desc">Code review, debugging, optimization</div>
+                </div>
+              </div>
+              <div class="category-item">
+                <span class="category-icon">✍️</span>
+                <div class="category-info">
+                  <div class="category-name">Writing & Summarization</div>
+                  <div class="category-desc">Improve writing, summarize content</div>
+                </div>
+              </div>
+              <div class="category-item">
+                <span class="category-icon">🔍</span>
+                <div class="category-info">
+                  <div class="category-name">Research & Analysis</div>
+                  <div class="category-desc">Research planning, data analysis</div>
+                </div>
+              </div>
+              <div class="category-item">
+                <span class="category-icon">🎨</span>
+                <div class="category-info">
+                  <div class="category-name">Creative & Innovation</div>
+                  <div class="category-desc">Brainstorming, innovation strategy</div>
+                </div>
+              </div>
+              <div class="category-item">
+                <span class="category-icon">⚡</span>
+                <div class="category-info">
+                  <div class="category-name">Productivity & Planning</div>
+                  <div class="category-desc">Project planning, workflow optimization</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status -->
+        <div class="accordion-item">
+          <button class="accordion-header" id="status-header">
+            <h3>📊 Status</h3>
+            <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div class="accordion-content" id="status-content">
+            <div class="status-card">
+              <div class="status-item">
+                <span class="status-label">Current Site:</span>
+                <span class="status-value" id="current-site">Checking...</span>
+              </div>
+              <div class="status-item">
+                <span class="status-label">Total Prompts:</span>
+                <span class="status-value" id="prompt-count">Loading...</span>
+              </div>
+              <div class="status-item">
+                <span class="status-label">Custom Prompts:</span>
+                <span class="status-value" id="custom-prompt-count">0</span>
+              </div>
+              <div class="status-item">
+                <span class="status-label">Extension:</span>
+                <span class="status-value supported">Active</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="accordion-item">
+          <button class="accordion-header" id="tips-header">
+            <h3>💡 Tips</h3>
+            <svg class="accordion-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6,9 12,15 18,9"></polyline>
+            </svg>
+          </button>
+          <div class="accordion-content" id="tips-content">
+            <div class="tips-card">
+              <div class="tip-item">
+                <span class="tip-icon">💡</span>
+                <span class="tip-text">Use Ctrl+Shift+P on any supported LLM site to quickly access prompts</span>
+              </div>
+              <div class="tip-item">
+                <span class="tip-icon">🎯</span>
+                <span class="tip-text">Prompts are organized by category for easy navigation</span>
+              </div>
+              <div class="tip-item">
+                <span class="tip-icon">⚡</span>
+                <span class="tip-text">Click any prompt to instantly insert it into the chat field</span>
+              </div>
+              <div class="tip-item">
+                <span class="tip-icon">➕</span>
+                <span class="tip-text">Click the + button in the sidebar to add your own custom prompts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="popup-footer">
+      <div class="footer-info">
+        <span class="version">v1.0.0</span>
+        <span class="status">Ready to use!</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
