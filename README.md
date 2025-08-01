@@ -1,204 +1,332 @@
-# PromptEZ
+# InPromptu
 
-A sleek Chrome browser extension that helps you quickly access and copy categorized prompts for LLM chat interfaces. Smart prompts at your fingertips!
+A powerful Chrome browser extension that provides smart, categorized prompts for LLM chat interfaces. Access hundreds of professional prompts with a sleek sidebar interface and manage your own custom prompts seamlessly.
+
+![InPromptu Logo](icons/icon48.png)
 
 ## ✨ Features
 
-- **Categorized Prompts**: Organized into 5 categories - Code, Writing & Summarization, Research & Analysis, Creative & Innovation, and Productivity & Planning
-- **Detailed Prompts**: Each prompt is comprehensive and includes structured templates for better results
-- **Quick Search**: Find prompts instantly with real-time search across all categories
-- **Add Custom Prompts**: Create and save your own prompts with the + button
-- **One-Click Copy**: Click any prompt to instantly copy it to your clipboard
-- **Sleek Design**: Modern, clean interface that's easy to use and navigate
-- **Persistent Storage**: Your custom prompts are saved and synced across devices
+### 🎯 Smart Prompt Management
+- **400+ Professional Prompts**: Pre-loaded with comprehensive prompts across 5 categories
+- **Custom Prompt Creation**: Add, edit, and delete your own prompts with full management capabilities
+- **Universal Edit/Delete**: Treat all prompts equally - edit or delete any prompt, default or custom
+- **Real-time Search**: Find prompts instantly with highlighted search results across titles and content
+- **Category Filtering**: Organized prompts by Code, Writing, Research, Creative, and Productivity
+
+### 🚀 Seamless Integration
+- **Sidebar Interface**: Press `Ctrl+Shift+P` on any LLM site to open the smart sidebar
+- **One-Click Insertion**: Click any prompt to instantly insert it into the chat field
+- **Cross-Platform Newlines**: Proper line break handling for all LLM platforms (ChatGPT, Claude, Poe, etc.)
+- **8 Supported Sites**: Works on ChatGPT, Claude, Poe, Bard, Copilot, Character.AI, Perplexity, and You.com
+
+### 🎨 Modern Interface
+- **Sleek Design**: Clean, professional interface with rounded edges and smooth animations
+- **Logo Integration**: Beautiful branded experience with custom logo
+- **Responsive Layout**: Works perfectly on all screen sizes
+- **Dynamic Updates**: Prompt counts and content update in real-time
+
+## 🌐 Supported LLM Platforms
+
+- **ChatGPT** (chat.openai.com, chatgpt.com)
+- **Claude AI** (claude.ai)
+- **Google Bard** (bard.google.com)
+- **Microsoft Copilot** (copilot.microsoft.com)
+- **Poe** (poe.com)
+- **Character.AI** (character.ai)
+- **Perplexity** (perplexity.ai)
+- **You.com** (you.com)
 
 ## 📂 Prompt Categories
 
 ### 💻 Code
-- **Comprehensive Code Review**: Thorough analysis for quality, performance, security, and bugs
-- **Advanced Debugging Assistant**: Systematic debugging with step-by-step approaches
-- **Refactor & Optimize Code**: Improve readability, performance, and best practices
+- Comprehensive code review and debugging
+- Architecture analysis and optimization
+- Best practices and refactoring guides
 
-### ✍️ Writing & Summarization  
-- **Professional Writing Enhancement**: Improve clarity, grammar, and impact
-- **Comprehensive Summary & Analysis**: Detailed summaries with key insights
-- **Content Adaptation & Repurposing**: Adapt content for different formats and audiences
+### ✍️ Writing & Summarization
+- Professional writing enhancement
+- Content adaptation and repurposing
+- Comprehensive analysis and summaries
 
 ### 🔍 Research & Analysis
-- **Research Strategy & Planning**: Create comprehensive research plans
-- **Data Analysis & Insights**: Extract actionable insights from data
-- **Competitive Analysis Framework**: Systematic competitor analysis
+- Strategic research planning
+- Data analysis and insights
+- Competitive analysis frameworks
 
 ### 🎨 Creative & Innovation
-- **Creative Brainstorming Session**: Generate diverse and innovative ideas
-- **Innovation Strategy Framework**: Develop structured innovation approaches
+- Creative brainstorming sessions
+- Innovation strategy development
+- Design thinking approaches
 
 ### ⚡ Productivity & Planning
-- **Strategic Project Planning**: Comprehensive project management templates
-- **Workflow Optimization Analysis**: Streamline processes and improve efficiency
+- Project management templates
+- Workflow optimization strategies
+- Strategic planning frameworks
 
 ## 🚀 Installation
 
-### Load as Unpacked Extension
+### Method 1: Download from GitHub (Recommended)
 
-1. **Download the extension files**:
-   - Download all files in this folder to your computer
-   - Keep them in a folder named "PromptEZ" or similar
+1. **Download the Extension**:
+   ```bash
+   git clone https://github.com/yourusername/inpromptu.git
+   ```
+   Or download as ZIP and extract to a folder named "InPromptu"
 
-2. **Enable Developer Mode in Chrome**:
-   - Open Chrome and go to `chrome://extensions/`
-   - Toggle "Developer mode" in the top-right corner
+2. **Enable Developer Mode**:
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Toggle "Developer mode" ON in the top-right corner
 
-3. **Load the extension**:
-   - Click "Load unpacked"
-   - Select the folder containing the extension files
-   - The extension should now appear in your extensions list
+3. **Load the Extension**:
+   - Click "Load unpacked" button
+   - Select the InPromptu folder containing all the extension files
+   - The extension icon should appear in your toolbar
 
-4. **Pin the extension** (recommended):
-   - Click the extensions icon (puzzle piece) in Chrome's toolbar
-   - Pin "PromptEZ" for easy access
+4. **Pin the Extension** (Optional):
+   - Click the extensions icon (🧩) in Chrome's toolbar
+   - Find "InPromptu" and click the pin icon to keep it visible
+
+### Method 2: Manual File Download
+
+1. Download these files to a folder named "InPromptu":
+   - `manifest.json`
+   - `content_script.js`
+   - `popup.html`
+   - `popup.css`
+   - `popup.js`
+   - `prompts.json`
+   - `icons/` folder with all icon files
+
+2. Follow steps 2-4 from Method 1 above
 
 ## 📖 How to Use
 
-### Basic Usage
+### Opening the Sidebar
 
-1. **Click the PromptEZ icon** in your browser toolbar
-2. **Browse categories** using the tabs at the top
-3. **Search for prompts** using the search bar
-4. **Click any prompt** to copy it to your clipboard
-5. **Paste the prompt** into any LLM chat interface
+1. **Navigate to any supported LLM site** (ChatGPT, Claude, etc.)
+2. **Press `Ctrl+Shift+P`** to open the InPromptu sidebar
+3. **Browse prompts** by category or use the search bar
 
-### Adding Custom Prompts
+### Using Prompts
 
-1. **Click the + button** in the top-right corner
-2. **Fill in the details**:
-   - **Title**: Give your prompt a descriptive name
-   - **Category**: Choose which category it belongs to
-   - **Content**: Write your prompt content
-3. **Click "Save Prompt"** to add it to your collection
+1. **Search or Browse**: Use the search bar or browse categories
+2. **Click to Insert**: Click any prompt to instantly insert it into the chat field
+3. **Edit Content**: Modify the inserted text as needed before sending
 
-### Search Tips
+### Managing Prompts
 
-- **Search by title** or content keywords
-- **Use Ctrl+K** (or Cmd+K on Mac) to quickly focus the search bar
-- **Clear search** with the X button or by switching categories
+#### Adding Custom Prompts
+1. **Click the + button** in the sidebar header
+2. **Fill in the form**:
+   - **Title**: Descriptive name for your prompt
+   - **Category**: Choose from existing categories
+   - **Content**: Your prompt text (supports multi-line with `\n`)
+3. **Save**: Click "Save Prompt" to add it to your collection
 
-### Keyboard Shortcuts
+#### Editing Prompts
+1. **Hover over any prompt** to see edit/delete buttons
+2. **Click the edit button** (pencil icon)
+3. **Modify** the title, category, or content
+4. **Save** your changes
 
-- **Ctrl+K / Cmd+K**: Focus search bar
-- **Escape**: Close any open modal or clear search
+#### Deleting Prompts
+1. **Hover over any prompt** to see edit/delete buttons
+2. **Click the delete button** (trash icon)
+3. **Confirm** the deletion when prompted
 
-## 🎨 Design Philosophy
+### Search Features
 
-PromptEZ follows a clean, modern design philosophy:
-- **Sleek but not fancy**: Professional appearance without unnecessary complexity
-- **Category-focused**: Clear organization for easy navigation
-- **Search-first**: Quick access to any prompt through instant search
-- **Copy-optimized**: One-click copying for seamless workflow
+- **Real-time Search**: Results update as you type
+- **Highlight Matches**: Search terms are highlighted in yellow
+- **Category Search**: Search includes category names
+- **No Results Handling**: Clear feedback when no matches found
+
+### Browser Popup
+
+Click the InPromptu icon in your toolbar to access:
+- **Quick Start Guide**: Step-by-step usage instructions
+- **Supported Sites**: List of compatible LLM platforms
+- **Status Information**: Current site compatibility and prompt counts
+- **Tips and Shortcuts**: Usage hints and keyboard shortcuts
+
+## ⌨️ Keyboard Shortcuts
+
+- **`Ctrl+Shift+P`**: Open/close sidebar on LLM sites
+- **`Escape`**: Close sidebar or modal
+- **Click Extension Icon**: Open browser popup for information
 
 ## 🔧 Technical Details
 
 ### File Structure
-
 ```
-PromptEZ/
-├── manifest.json              # Extension configuration
-├── prompts.json              # Default categorized prompts
-├── popup.html                # Main interface
-├── popup.css                 # Modern styling
-├── popup.js                  # Functionality & interactions
-├── icons/                    # Extension icons
+InPromptu/
+├── manifest.json          # Extension configuration (Manifest V3)
+├── content_script.js       # Sidebar functionality and prompt injection
+├── popup.html             # Browser popup interface
+├── popup.css              # Modern styling with rounded edges
+├── popup.js               # Popup functionality and storage management
+├── prompts.json           # Default categorized prompts database
+├── icons/                 # Extension icons and logo
 │   ├── icon16.png
+│   ├── icon32.png
 │   ├── icon48.png
-│   └── icon128.png
-└── README.md                 # This file
+│   ├── icon128.png
+│   └── icon-template.svg
+└── README.md              # This documentation
 ```
 
-### Storage
+### Storage & Privacy
 
-- **Local Storage**: Custom prompts are stored locally in your browser
-- **Chrome Sync**: Prompts sync across your Chrome browsers when signed in
-- **No External Services**: Everything works offline, no data sent to external servers
+- **Local Storage**: Custom prompts stored in `chrome.storage.local`
+- **No Cloud Sync**: Everything stays on your device
+- **No Data Collection**: Zero telemetry or analytics
+- **Offline First**: Works completely without internet
+- **Open Source**: Full transparency, audit the code yourself
 
 ### Permissions
 
-The extension requires minimal permissions:
-- `storage`: To save and sync your custom prompts
-- `activeTab`: To interact with the current webpage for copying
+Minimal permissions for maximum security:
+- `activeTab`: To insert prompts into LLM sites
+- `storage`: To save your custom prompts locally
+- `tabs`: To detect current site compatibility
 
 ## 🎯 Use Cases
 
 ### For Developers
-- Code reviews and debugging assistance
-- Architecture and optimization guidance
-- Documentation and testing templates
+- **Code Reviews**: Comprehensive analysis templates
+- **Debugging**: Systematic troubleshooting approaches
+- **Architecture**: Design pattern guidance
+- **Documentation**: README and API templates
 
-### For Writers
-- Content improvement and adaptation
-- Professional communication templates
-- Research and analysis frameworks
+### For Writers & Marketers
+- **Content Creation**: Writing enhancement prompts
+- **SEO Optimization**: Content analysis templates
+- **Social Media**: Engagement and strategy prompts
+- **Copywriting**: Conversion-focused templates
 
-### For Professionals
-- Project planning and management
-- Workflow optimization
-- Strategic analysis and planning
+### For Researchers & Analysts
+- **Data Analysis**: Statistical insight templates
+- **Market Research**: Competitive analysis frameworks
+- **Academic Research**: Citation and methodology guides
+- **Report Writing**: Executive summary templates
 
-### For Creatives
-- Brainstorming and ideation
-- Innovation strategy development
-- Creative problem-solving approaches
+### For Creatives & Innovators
+- **Brainstorming**: Idea generation techniques
+- **Design Thinking**: User experience frameworks
+- **Innovation**: Strategic development approaches
+- **Problem Solving**: Creative methodology templates
 
-## 🔄 Updates & Customization
+### For Project Managers
+- **Planning**: Comprehensive project templates
+- **Risk Assessment**: Management frameworks
+- **Team Coordination**: Communication strategies
+- **Process Optimization**: Workflow improvement guides
 
-### Adding More Categories
+## 🔄 Customization
 
+### Adding New Prompts
+- Use the built-in interface (+ button) for the best experience
+- All changes are automatically saved and synchronized
+
+### Modifying Categories
 1. Edit `prompts.json` to add new categories
-2. Follow the existing structure with `id`, `name`, `icon`, and `prompts`
+2. Follow the existing JSON structure
 3. Reload the extension to see changes
 
-### Modifying Existing Prompts
-
-1. Edit the content in `prompts.json`
-2. Use markdown formatting for better structure
-3. Reload the extension to apply changes
+### Importing/Exporting (Future Feature)
+- Export your custom prompts as JSON
+- Import prompts from other users
+- Share prompt collections with your team
 
 ## 🛡️ Privacy & Security
 
-- **No data collection**: PromptEZ doesn't collect or transmit any personal data
-- **Local storage only**: All prompts are stored locally in your browser
-- **No external connections**: Works completely offline
-- **Open source**: Code is transparent and auditable
+### Data Protection
+- **Zero Data Collection**: No analytics, telemetry, or user tracking
+- **Local Storage Only**: All data stays on your device
+- **No External Requests**: Completely offline operation
+- **XSS Protection**: Proper HTML escaping for all user content
+
+### Security Features
+- **Content Sanitization**: All user input is properly escaped
+- **Minimal Permissions**: Only requests necessary browser permissions
+- **Open Source**: Full code transparency for security auditing
 
 ## 🆘 Troubleshooting
 
-### Extension Not Loading?
-1. Make sure Developer Mode is enabled
-2. Check that all files are in the same folder
-3. Reload the extension from chrome://extensions/
+### Installation Issues
 
-### Prompts Not Copying?
-1. Make sure clipboard permissions are granted
-2. Try clicking the prompt again
-3. Check if other extensions are interfering
+**Extension not loading?**
+- Ensure Developer Mode is enabled in `chrome://extensions/`
+- Verify all files are in the same folder
+- Check the console for error messages
 
-### Search Not Working?
-1. Clear the search bar and try again
-2. Make sure you're typing in the search field
-3. Try switching categories to reset the view
+**Manifest errors?**
+- Make sure you have the latest Chrome version
+- Ensure all required files are present
+- Check file permissions
 
-## 🚀 Future Enhancements
+### Usage Issues
 
-Planned features for future versions:
-- Import/Export prompt collections
-- Prompt templates with variables
-- Team sharing capabilities
-- Integration with popular LLM platforms
-- Prompt analytics and usage tracking
+**Sidebar not opening?**
+- Verify you're on a supported LLM site
+- Try refreshing the page
+- Check if other extensions conflict
+- Look for console errors (F12)
+
+**Prompts not inserting?**
+- Make sure the input field is visible and active
+- Try clicking in the chat input first
+- Check console for insertion errors
+
+**Edit/Delete buttons not working?**
+- Hover over prompts to reveal action buttons
+- Ensure JavaScript is enabled
+- Try refreshing the sidebar
+
+### Performance Issues
+
+**Sidebar loading slowly?**
+- Check if you have many custom prompts
+- Clear browser cache if needed
+- Restart Chrome if problems persist
+
+## 🚀 Future Roadmap
+
+### Planned Features
+- **Import/Export**: Share prompt collections as JSON files
+- **Prompt Variables**: Template placeholders for dynamic content
+- **Usage Analytics**: Track your most-used prompts
+- **Team Sharing**: Collaborate on prompt collections
+- **AI Enhancement**: AI-powered prompt suggestions
+- **More Platforms**: Support for additional LLM sites
+
+### Community Features
+- **Prompt Marketplace**: Community-shared prompt collections
+- **Rating System**: Rate and review prompts
+- **Version Control**: Track prompt modifications over time
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Report Bugs**: Use GitHub Issues for bug reports
+2. **Feature Requests**: Suggest new features via Issues
+3. **Code Contributions**: Submit Pull Requests
+4. **Prompt Contributions**: Share useful prompts
+5. **Documentation**: Improve this README or add examples
 
 ## 📄 License
 
-This project is open source. Feel free to modify and distribute according to your needs.
+This project is open source under the MIT License. Feel free to modify, distribute, and use according to your needs.
+
+## 🙏 Acknowledgments
+
+- Icons designed with modern LLM aesthetics in mind
+- Prompt templates inspired by industry best practices
+- UI/UX following contemporary browser extension standards
 
 ---
 
-**PromptEZ - Smart prompts at your fingertips!** ✨ 
+**InPromptu - Smart prompts at your fingertips!** ✨
+
+*Made with ❤️ for the LLM community* 
